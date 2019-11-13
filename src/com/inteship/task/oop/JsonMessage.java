@@ -1,3 +1,5 @@
+package com.inteship.task.oop;
+
 public class JsonMessage implements Message {
 
     private String name="JSON";
@@ -5,8 +7,7 @@ public class JsonMessage implements Message {
     private String body;
 
 
-    public void jsonMessage(String body) {
-        this.name = getName();
+    public JsonMessage(String body) {
         this.body = body;
     }
 
@@ -19,15 +20,17 @@ public class JsonMessage implements Message {
     }
 
     public void prepareMessage() {
-        System.out.println("Empty field");
+        System.out.println("Message type: "+name+ " || Message: "+body);
     }
 
     public void prepareMessage(String s) {
-        System.out.println(s);
+        body=body+" "+s;
+        System.out.println("Message type: "+name+ " || Message: "+body);
     }
 
     public void prepareMessage(String s, String s1) {
-        System.out.println("Message: "+s+" "+ s1);
+        body=body+ " "+s+" "+s1;
+        System.out.println("Message type: "+name+ " || Message: "+body);
     }
 
 }

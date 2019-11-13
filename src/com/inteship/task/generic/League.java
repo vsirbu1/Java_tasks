@@ -20,4 +20,3 @@ public class League <TypeSport extends Sport>{
             System.out.println(team.get(i).getName());
         }
     }
-}

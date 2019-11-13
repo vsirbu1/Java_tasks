@@ -14,5 +14,3 @@ public class Main {
         footballLeague.addTeamToLeague(Barca);
         footballLeague.addTeamToLeague(Liverpool);
         footballLeague.displayLeague();
-    }
-}
